@@ -5,15 +5,18 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <!-- aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css">
 
     <title>INFO COVID-19</title>
   </head>
-  <body>
+  <body id="beranda">
     <!-- Nav Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: greenyellow">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: greenyellow">
 
       <div class="container">
         <a class="navbar-brand" href="#";">INFO COVID 19</a>
@@ -23,16 +26,16 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Beranda</a>
+              <a class="nav-link active" aria-current="page" href="#beranda">Beranda</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Varian</a>
+              <a class="nav-link" href="#varian">Varian</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Vaksin</a>
+              <a class="nav-link" href="#vaksin">Vaksin</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Kuis</a>
+              <a class="nav-link" href="#contact">Kuis</a>
             </li>
           </ul>
         </div>
@@ -53,23 +56,23 @@
     <section id="varian">
         <div class="container">
             <div class="row text-center mb-3">
-                <div class="col">
+                <div class="col" data-aos="flip-left">
                     <h2>VARIAN COVID</h2>
                 </div>
             </div>
             <div class="row justify-content-center fs-5 text-center">
-                <div class="col">
+                <div class="col" data-aos="fade-down"data-aos-delay="300">
                     <h4>Varian Alpha</h4>
                     <img src="img/VarianAlpha.jpg" style="width: 200px;" alt="">
                     <p>COVID-19 varian Alfa diketahui lebih cepat menular dan menyebar karena lebih mampu menembus sistem kekebalan tubuh manusia. Bahkan, sejak April 2021 varian ini sudah menjadi salah satu varian virus Corona yang dominan di Amerika Serikat dan Inggris.
                     </p>
                 </div>
-                <div class="col">
+                <div class="col"data-aos="fade-up"data-aos-delay="300">
                     <h4>Varian Beta</h4>
                     <img src="img/VarianBeta.jpg" style="width: 200px;"alt="">
                     <p>COVID-19 varian Beta juga diketahui lebih mudah menular antarmanusia. Gejala infeksi virus Corona varian ini umumnya mirip dengan gejala COVID-19 secara umum, tetapi COVID-19 varian Beta diketahui lebih kebal terhadap beberapa jenis pengobatan.</p>
                 </div>
-                <div class="col">
+                <div class="col"data-aos="fade-down"data-aos-delay="300">
                     <h4>Varian Gamma</h4>
                     <img src="img/VarianGamma.jpg" style="width: 215px;"alt="">
                     <p>COVID-19 varian ini pertama kali ditemukan di Brazil dan Jepang. Meski jenis mutasinya berbeda dengan varian lainnya, virus Corona varian Gamma diketahui dapat menimbulkan gejala yang mirip dengan varian lain, seperti varian Beta.</p>
@@ -83,17 +86,17 @@
     </section>
 
     <!-- step 3 -->
-    <section id="projects">
+    <section id="vaksin">
         <div class="container">
             <div class="row text-center mb-3">
-                <div class="col">
-                    <h2>Vaksin</h2>
+                <div class="col"data-aos="flip-left">
+                    <h2>VAKSIN COVID</h2>
                 </div>
             </div>
             <div class="row">
                 <div class="col">
                     <div class="card-group">
-                        <div class="card">
+                        <div class="card" data-aos="fade-down"data-aos-delay="300">
                           <img src="img/VaksinSinovac.jpg" class="card-img-top" alt="lustrasi Vaksin Sinovac">
                           <div class="card-body">
                             <h5 class="card-title">Vaksin Sinovac</h5>
@@ -101,7 +104,7 @@
                             <p class="card-text"><small class="text-muted">Lihat Selengkapnya</small></p>
                           </div>
                         </div>
-                        <div class="card">
+                        <div class="card" data-aos="fade-up"data-aos-delay="300">
                           <img src="img/VaksinAstraZeneca.jpg" class="card-img-top" alt="lustrasi Vaksin AstraZeneca">
                           <div class="card-body">
                             <h5 class="card-title">Vaksin AstraZeneca</h5>
@@ -109,7 +112,7 @@
                             <p class="card-text"><small class="text-muted">Lihat Selengkapnya</small></p>
                           </div>
                         </div>
-                        <div class="card">
+                        <div class="card"data-aos="fade-down"data-aos-delay="300">
                           <img src="img/VaksinModerna.jpg" class="card-img-top" alt="lustrasi Vaksin Moderna">
                           <div class="card-body">
                             <h5 class="card-title">Vaksin Moderna</h5>
@@ -182,6 +185,13 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
     
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+
+
     <script>
       const scriptURL = 'https://script.google.com/macros/s/AKfycbwHyo3ULrJvqhKNRN_dmgofZLX_ZJ-V43hRv5ocMzClZXL6sn1zCKRImb7X-Bg8GFAY/exec';
       const form = document.forms['Form-kontak']
