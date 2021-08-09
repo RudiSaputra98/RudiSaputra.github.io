@@ -31,5 +31,3 @@ form.addEventListener("submit", (e) => {
     }
   }, 10);
 });
-
-form.reset();

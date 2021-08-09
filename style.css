@@ -8,10 +8,58 @@
 }
 
 section {
-  padding-top: 2rem;
+  padding-top: 60px;
 }
 
 marquee {
   text-transform: uppercase;
   font-weight: bold;
+}
+
+nav {
+  background-color: greenyellow;
+}
+
+footer {
+  background-color: greenyellow;
+  padding-bottom: 2px;
+}
+
+.video {
+  text-align: center;
+  padding-top: 100px;
+}
+
+.row {
+  text-align: justify;
+}
+
+.isivaksin {
+  padding-top: 40px;
+}
+
+.sumber {
+  text-align: right;
+  font-style: italic;
+}
+
+.navbar-brand {
+  font-size: 22px;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-animation: typing 15s steps(170, end);
+  animation: bounce 15s steps(170, end);
+}
+
+@keyframes bounce {
+  from {
+    width: 0;
+  }
+}
+
+@-webkit-keyframes bounce {
+  from {
+    width: 0;
+  }
 }
