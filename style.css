@@ -3,8 +3,34 @@
   background-color: #e2edff;
 }
 
+.preview {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.pad {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.preview1 {
+  margin-left: 50px;
+  margin-right: 50px;
+  text-align: justify;
+}
+
 #projects {
   background-color: #e2edff;
+}
+.detail1 {
+  padding: 50px;
+}
+
+.varian2 {
+  text-align: center;
+  font-weight: bold;
+  text-decoration-style: none;
+  font-weight: 900;
+  font-size: larger;
 }
 
 section {
